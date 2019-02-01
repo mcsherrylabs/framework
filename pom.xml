@@ -107,6 +107,18 @@
         <url>https://github.com/vaadin/framework</url>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>stepsoft</id>
+            <name>nexus repository</name>
+            <url>http://nexus.mcsherrylabs.com/repository/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>stepsoft</id>
+            <name>Your Snapshot Repository</name>
+            <url>http://nexus.mcsherrylabs.com/repository/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>

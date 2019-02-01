@@ -213,10 +213,11 @@ public class VaadinResourceTrackerComponent {
      */
     @Deactivate
     protected void deactivate() {
-        for(final Delegate registration : resourceToRegistration.values()) {
+        for (final Delegate registration : resourceToRegistration.values()) {
             unregisterResource(registration);
         }
-        for(List<ServiceRegistration<? extends OsgiVaadinResource>> registrations : contributorToRegistrations.values()) {
+        for (List<ServiceRegistration<? extends OsgiVaadinResource>> registrations : contributorToRegistrations
+                .values()) {
             for (ServiceRegistration<? extends OsgiVaadinResource> reg : registrations) {
                 reg.unregister();
             }
